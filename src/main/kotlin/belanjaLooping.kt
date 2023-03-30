@@ -30,22 +30,34 @@ fun main() {
                 totalHarga.add(jumlahBeli * harga)
                 total += totalHarga[x]
                 x++ }
-//            "3" -> { println("Anda Membeli Nutrisari dengan harga 2.000")
-//                harga.add(2000)
-//                total += harga[x]
-//                x++ }
-//            "4" -> { println("Anda Membeli Coca-Cola dengan harga 7.500")
-//                harga.add(7500)
-//                total += harga[x]
-//                x++ }
-//            "5" -> { println("Anda Membeli Indomie dengan harga 3.500")
-//                harga.add(3500)
-//                total += harga[x]
-//                x++ }
-//            "6" -> { println("Anda Membeli GoodDay dengan harga 2.500")
-//                harga.add(2500)
-//                total += harga[x]
-//                x++ }
+            "3" -> { println("Anda Membeli Nutrisari dengan harga 2.000")
+                print("Masukan Jumlah beli : ")
+                var jumlahBeli = readln().toInt()
+                harga = 2000
+                totalHarga.add(jumlahBeli * harga)
+                total += totalHarga[x]
+                x++ }
+            "4" -> { println("Anda Membeli Coca-Cola dengan harga 7.500")
+                print("Masukan Jumlah beli : ")
+                var jumlahBeli = readln().toInt()
+                harga = 7500
+                totalHarga.add(jumlahBeli * harga)
+                total += totalHarga[x]
+                x++ }
+            "5" -> { println("Anda Membeli Indomie dengan harga 3.500")
+                print("Masukan Jumlah beli : ")
+                var jumlahBeli = readln().toInt()
+                harga = 3500
+                totalHarga.add(jumlahBeli * harga)
+                total += totalHarga[x]
+                x++ }
+            "6" -> { println("Anda Membeli GoodDay dengan harga 2.500")
+                print("Masukan Jumlah beli : ")
+                var jumlahBeli = readln().toInt()
+                harga = 2500
+                totalHarga.add(jumlahBeli * harga)
+                total += totalHarga[x]
+                x++ }
             "7" -> println("Terima kasih Sudah belanja di sini")
         }
     }
