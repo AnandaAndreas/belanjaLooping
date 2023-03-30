@@ -65,7 +65,7 @@ fun main() {
         println("====barang yang anda beli adalah=====")
         for (b in totalHarga){
             var nomer = totalHarga.indexOf(b) + 1
-            println("harga barang ke $nomer adalah $b")
+            println("harga $jumlahBeli barang ke $nomer adalah $b")
         }
         println("Total yang harus anda bayar : $total")
 
