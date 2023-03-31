@@ -14,6 +14,7 @@ fun main() {
     var total = 0
     var x = 0
     var harga = 0
+    var i = 0
     do {
         print("Masukan Menu : ")
         var pilih = readln()
@@ -21,7 +22,7 @@ fun main() {
             "1" -> { println("Anda Membeli Fanta dengan harga @7.000")
                 print("Masukan Jumlah beli : ")
                 jumlahBeli.add(readln().toInt())
-                namaBarang.add(("Fanta"))
+                namaBarang.add(("Fanta       "))
                 harga = 7000
                 totalHarga.add(jumlahBeli[x] * harga)
                 total += totalHarga[x]
@@ -29,7 +30,7 @@ fun main() {
             "2" -> { println("Anda Membeli Mie sedap dengan harga 3.500")
                 print("Masukan Jumlah beli : ")
                 jumlahBeli.add(readln().toInt())
-                namaBarang.add(("Mie sedap"))
+                namaBarang.add(("Mie sedap   "))
                 harga = 3500
                 totalHarga.add(jumlahBeli[x] * harga)
                 total += totalHarga[x]
@@ -37,7 +38,7 @@ fun main() {
             "3" -> { println("Anda Membeli Nutrisari dengan harga 2.000")
                 print("Masukan Jumlah beli : ")
                 jumlahBeli.add(readln().toInt())
-                namaBarang.add(("Nutrisari"))
+                namaBarang.add(("Nutrisari   "))
                 harga = 2000
                 totalHarga.add(jumlahBeli[x] * harga)
                 total += totalHarga[x]
@@ -45,7 +46,7 @@ fun main() {
             "4" -> { println("Anda Membeli Coca-Cola dengan harga 7.500")
                 print("Masukan Jumlah beli : ")
                 jumlahBeli.add(readln().toInt())
-                namaBarang.add(("Coca-Cola"))
+                namaBarang.add(("Coca-Cola   "))
                 harga = 7500
                 totalHarga.add(jumlahBeli[x] * harga)
                 total += totalHarga[x]
@@ -53,7 +54,7 @@ fun main() {
             "5" -> { println("Anda Membeli Indomie dengan harga 3.500")
                 print("Masukan Jumlah beli : ")
                 jumlahBeli.add(readln().toInt())
-                namaBarang.add(("Indomie"))
+                namaBarang.add(("Indomie     "))
                 harga = 3500
                 totalHarga.add(jumlahBeli[x] * harga)
                 total += totalHarga[x]
@@ -61,7 +62,7 @@ fun main() {
             "6" -> { println("Anda Membeli GoodDay dengan harga 2.500")
                 print("Masukan Jumlah beli : ")
                 jumlahBeli.add(readln().toInt())
-                namaBarang.add(("GoodDay"))
+                namaBarang.add(("GoodDay   "))
                 harga = 2500
                 totalHarga.add(jumlahBeli[x] * harga)
                 total += totalHarga[x]
@@ -71,9 +72,9 @@ fun main() {
     }
         while (pilih != "7")
         println("====barang yang anda beli adalah=====")
-        for (b in totalHarga){
-            var nomer = totalHarga.indexOf(b) + 1
-            println("$namaBarang   :  $jumlahBeli  =  $b")
+    for (b in totalHarga){
+            println("${namaBarang.get(i)}   :  ${jumlahBeli.get(i)}  =   $b")
+            i += 1
         }
         println("Total yang harus anda bayar : $total")
 
